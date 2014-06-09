@@ -1,0 +1,40 @@
+html{
+    height:100%;
+}
+body{
+    height:100%;
+    font-family: sans-serif;
+}
+
+/*hover affect*/
+.hover-image {
+    border: 1px solid green;
+    position: relative;
+    height: 100px;
+    width: 120px;
+    display: inline-block;
+}
+
+.hover-content {
+    position: absolute;
+    height: 100px;
+    width: 120px;
+    display: block;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.hover-content:hover {
+    opacity: 1.0;
+}
+.hover-content span {
+    position: absolute;
+    text-align: center;
+    color: white;
+    bottom: 0;
+    display: block;
+    height: 1.3em;
+    width: 120px;
+    background-color: rgba(0, 0, 0, 0.3)
+}
